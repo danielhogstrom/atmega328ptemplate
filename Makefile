@@ -50,7 +50,7 @@ all: $(BUILD_DIR)/program.hex
 
 # Flash the HEX file to the microcontroller
 flash: $(BUILD_DIR)/program.hex
-	avrdude -v -p atmega328p -C /home/daniel/.platformio/packages/tool-avrdude/avrdude.conf -c arduino -b 115200 -D -P /dev/ttyACM0 -U flash:w:$<:i
+	avrdude -v -p atmega328p -c arduino -b 115200 -D -P /dev/ttyACM0 -U flash:w:$<:i
 
 # Clean the build files
 clean:
