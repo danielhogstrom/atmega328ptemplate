@@ -1,12 +1,15 @@
 # Atmega328p Template Project using Arduino as ISP
 
-## Requirements
+# Requirements
   ### AVR 8-Bit Toolchain (Linux)
     https://www.microchip.com/en-us/tools-resources/develop/microchip-studio/gcc-compilers
   ### AVRDUDE for Linux
     sudo apt-get install avrdude
-
-## Commands
+# Commands using make
+    make
+    
+    make flash
+# Commands
   ### Compile for atmega328
     avr-gcc -Wall -Wextra -Os -DF_CPU=16000000UL -mmcu=atmega328p <c-file>  
   avr-gcc -Wall -Wextra -Os -DF_CPU=16000000UL -mmcu=atmega328p **main.c**
